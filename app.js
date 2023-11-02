@@ -7,3 +7,7 @@ let anchorElement = document.getElementById("external-link"); // Looks for eleme
 anchorElement.href = "https://google.com";
 
 // Quicker and more specific way of changing an element using JS ^^ This uses queries.
+
+anchorElement = document.querySelector("p a"); // querySelector needs a CSS parameter: p a { color: red; }
+// querySelectorAll selects all elements.
+anchorElement.href = "https://elliotthorpe.co.uk";
