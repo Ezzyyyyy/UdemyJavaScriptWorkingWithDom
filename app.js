@@ -52,7 +52,11 @@ let firstH1Element = document.querySelector("h1");
 firstH1Element.remove();
 // firstH1Element.parentElement.removeChild(firstH1Element); //works on older browsers
 
-
 // MOVE ELEMENTS
 
 firstParagraph.parentElement.append(firstParagraph); // this will move firstParagraph to the end of parentElement (body in this case)
+
+// innerHTML - gives access to all HTML contentm
+console.log(firstParagraph.innerHTML);
+
+firstParagraph.innerHTML = "Hi! This is <strong>important!</strong>"; //Allows direct change to HTML elements and add HTML features.
