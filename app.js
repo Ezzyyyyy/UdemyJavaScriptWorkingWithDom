@@ -16,7 +16,8 @@ anchorElement.href = "https://elliotthorpe.co.uk";
 
 //document.getElementById('some-id'): Select a HTML element by its ID (selects only one element, since IDs should be unique)
 
-//document.querySelector('<some-css-selector>'): Selects the first matching (!) HTML element that is met / selected by the provided CSS selector; The CSS selector can basically be any kind of valid CSS selector (e.g. ID selector, tag type selector, class selector, combined selectors etc.)
+//document.querySelector('<some-css-selector>'): Selects the first matching (!) HTML element that is met / selected by the provided CSS selector; The CSS selector can basically be any kind of valid CSS selector
+//(e.g. ID selector, tag type selector, class selector, combined selectors etc.)
 
 //document.querySelectorAll('<some-css-selector>'): Selects ALL matching HTML elements that are met / selected by the provided CSS selector
 
@@ -24,4 +25,19 @@ anchorElement.href = "https://elliotthorpe.co.uk";
 
 //document.getElementsByClassName('some-css-class'): Selects all HTML elements that have the provided CSS class
 
-//document.getElementsByTagName('tag'): Selects all HTML elements that are of the provided HTML tag type 
+//document.getElementsByTagName('tag'): Selects all HTML elements that are of the provided HTML tag type
+
+// ADD AN ELEMENT
+// 1. Create the new element
+
+let newAnchorElement = document.createElement("a");
+newAnchorElement.href = "https://google.com";
+newAnchorElement.textContent = "This leads to Google!";
+
+// 2. Get access to the parent element that should hold the new element
+
+let firstParagraph = document.querySelector("p");
+
+// 3. Insert the new element into the parent element content
+
+firstParagraph.append(newAnchorElement);
