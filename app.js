@@ -50,4 +50,9 @@ let firstH1Element = document.querySelector("h1");
 // 2. Remove it!
 
 firstH1Element.remove();
-firstH1Element.parentElement.removeChild(firstH1Element); //works on older browsers
+// firstH1Element.parentElement.removeChild(firstH1Element); //works on older browsers
+
+
+// MOVE ELEMENTS
+
+firstParagraph.parentElement.append(firstParagraph); // this will move firstParagraph to the end of parentElement (body in this case)
